@@ -25,9 +25,11 @@ steps:
     repository: 'mexparedes/contenedores'
     command: 'build'
     Dockerfile: '**/Dockerfile'
-
+    tags: 'latest'
+  
 - task: Docker@2
   inputs:
     containerRegistry: 'Docker'
     repository: 'mexparedes/contenedores'
     command: 'push'
+    tags: 'latest'
