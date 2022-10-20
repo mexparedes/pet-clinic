@@ -18,7 +18,7 @@ steps:
     SonarCloud: 'Sonarcloud'
     organization: 'DevSecOpsMax'
     projectKey: 'devsecopsmax'
-    projectName: 'pet-clinic'
+    projectName: 'pet-clinic-2'
 
 - task: Gradle@3
   inputs:
