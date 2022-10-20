@@ -15,10 +15,11 @@ steps:
     spotBugsAnalysis: false
 - task: SonarCloudPrepare@1
   inputs:
-    SonarCloud: 'Sonarcloud'
-    organization: 'DevSecOpsMax'
+    SonarCloud: 'sonarcloud'
+    organization: 'devsecopsmax'
+    scannerMode: 'MSBuild'
     projectKey: 'devsecopsmax'
-    projectName: 'pet-clinic-2'
+    projectName: 'DevSecOpsMax_pet-clinic-1'
 
 - task: Gradle@3
   inputs:
