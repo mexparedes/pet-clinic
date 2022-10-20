@@ -15,11 +15,10 @@ steps:
     spotBugsAnalysis: false
 - task: SonarCloudPrepare@1
   inputs:
-    SonarCloud: 'sonarcloud'
+    SonarCloud: 'Sonarcloud'
     organization: 'devsecopsmax'
-    scannerMode: 'MSBuild'
-    projectKey: 'devsecopsmax'
-    projectName: 'DevSecOpsMax_pet-clinic-1'
+    projectKey: 'DevSecOpsMax_pet-clinic-1'
+    projectName: 'pet-clinic-1'
 
 - task: Gradle@3
   inputs:
@@ -66,7 +65,7 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'Docker'
-    repository: 'mexparedes/contenedores'
+    repository: 'mexparedes/pet-clinic'
     command: 'push'
     tags: 'latest'
 
